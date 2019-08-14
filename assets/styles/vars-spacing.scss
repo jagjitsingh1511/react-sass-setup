@@ -1,0 +1,49 @@
+$factor: 8;
+
+/* VARIABLES: SPACING MAPPING */
+$spacing-xl-properties: (
+	null:	$factor * 15px,
+	xl: 	$factor * 15px,
+	md:		$factor * 10px,
+	sm:		$factor * 10px,
+	xs:		$factor * 8px
+);
+
+$spacing-lg-properties: (
+	null: 	$factor * 10px,
+	xl:		$factor * 10px,
+	md:		$factor * 8px,
+	sm:		$factor * 8px,
+	xs:		$factor * 4px
+);
+
+$spacing-md-properties: (
+	null: 	$factor * 8px,
+	xl:		$factor * 8px,
+	md:		$factor * 4px,
+	sm:		$factor * 4px,
+	xs:		$factor * 4px
+);
+
+$spacing-sm-properties: (
+	null: 	$factor * 4px,
+	xl:		$factor * 4px,
+	md:		$factor * 2px,
+	sm:		$factor * 2px,
+	xs:		$factor * 2px
+);
+
+$spacing-xs-properties: (
+	null: 	$factor * 2px,
+	xl:		$factor * 2px,
+	md:		$factor * 1px,
+	sm:		$factor * 1px,
+	xs:		$factor * 1px
+);
+
+//Aliases
+$spacing-xl: $spacing-xl-properties;
+$spacing-lg: $spacing-lg-properties;
+$spacing-md: $spacing-md-properties;
+$spacing-sm: $spacing-sm-properties;
+$spacing-xs: $spacing-xs-properties;

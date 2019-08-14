@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "EtelkaTextPro";
+  src: local("Etelka"), url(../fonts/EtelkaTextPro.otf) format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "EtelkaLightPro";
+  src: local("Etelka"), url(../fonts/EtelkaLightPro.otf) format("opentype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "EtelkaMediumPro";
+  src: local("Etelka"), url(../fonts/EtelkaMediumPro.otf) format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "EtelkaTextProBold";
+  src: local("Etelka"), url(../fonts/EtelkaTextProBold.otf) format("opentype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Arabic";
+  src: local("Arabic"), url(../fonts/HandelGothicArabic.otf) format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Arabic";
+  src: local("Arabic"),
+    url(../fonts/HandelGothicArabicMedium.otf) format("opentype");
+  font-weight: 700;
+}

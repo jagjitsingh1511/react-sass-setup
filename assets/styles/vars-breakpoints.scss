@@ -1,0 +1,62 @@
+/** VARIABLES: BREAKPOINTS **/
+$breakpoint-xl-min: 2560px;
+$breakpoint-xl-max: 3840px;
+$breakpoint-lg-min: 1340px;
+$breakpoint-lg-max: 2559px;
+$breakpoint-md-min: 1024px;
+$breakpoint-md-max: 1339px;
+$breakpoint-sm-min: 768px;
+$breakpoint-sm-max: 1023px;
+$breakpoint-xs-min: 320px;
+$breakpoint-xs-max: 767px;
+
+$breakpoints: (
+	xl: ($breakpoint-xl-min, $breakpoint-xl-max),	//Widescreen
+	// lg: ($breakpoint-lg-min, $breakpoint-lg-max),//Desktop -- default, don't parse
+	md: ($breakpoint-md-min, $breakpoint-md-max),	//Laptop & Tablet Landscape
+	sm: ($breakpoint-sm-min, $breakpoint-sm-max),	//Tablet Portrait 
+	xs: ($breakpoint-xs-min, $breakpoint-xs-max)	//Mobile
+);
+
+@mixin breakpoint($bp){
+	@if $bp == xl {
+		@media only screen and (min-width: $breakpoint-xl-min) { @content; }
+	}
+	@if $bp == md {
+		@media only screen and (min-width: $breakpoint-md-min) and (max-width: $breakpoint-md-max) { @content; }
+	}
+	@if $bp == sm {
+		@media only screen and (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-sm-max) { @content; }
+	}
+	@if $bp == xs {
+		@media only screen and (min-width: $breakpoint-xs-min) and (max-width: $breakpoint-xs-max) { @content; }
+	}
+	@if $bp == smxs {
+		@media only screen and (min-width: $breakpoint-xs-min) and (max-width: $breakpoint-sm-max) { @content; }
+	}
+}
+
+/*@mixin responsify($bps...){
+
+	@if(xl) {
+		@include breakpoint(xl){ $bp:xl; @content; }
+	}
+	@if(md){
+		@include breakpoint(md){ $bp:md; @content; }
+	}
+	@if(sm){
+		@include breakpoint(sm){ $bp:sm; @content; }
+	}
+	@if(xs){
+		@include breakpoint(xs){ $bp:xs; @content; }
+	}
+}*/
+
+/*
+		@include responsify(null, xl, md, sm, xs){
+			$bp;
+			padding-top: map-get($spacing-sm, $bp);
+			margin-top: map-get($spacing-md, $bp);
+		}
+		
+		*/

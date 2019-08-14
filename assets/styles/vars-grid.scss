@@ -1,0 +1,123 @@
+/** VARIABLES: GRID **/
+$mobile-gutter: 16;
+
+$grid-container-width: (
+	null: 	1276,
+	xl:		1600,
+	md:		960,
+	sm:		720,
+	xs:		100%
+);
+
+$grid-gutter-width: (
+	null: 	32,
+	xl:		32,
+	md:		32,
+	sm:		24,
+	xs:		24
+);
+
+$grid-col-width: (
+	null: 	(map-get($grid-container-width, null) - map-get($grid-gutter-width, null) * 11) / 12,
+	xl: 	(map-get($grid-container-width, xl) - map-get($grid-gutter-width, xl) * 11) / 12,
+	md:		(map-get($grid-container-width, md) - map-get($grid-gutter-width, md) * 11) / 12,
+	sm:		(map-get($grid-container-width, sm) - map-get($grid-gutter-width, sm) * 11) / 12,
+	xs:		(map-get($grid-container-width, xs) - map-get($grid-gutter-width, xs) * 11) / 12
+);	
+
+$grid-col-1: (
+	null: 	map-get($grid-col-width, null) * 1px,
+	xl:		map-get($grid-col-width, xl) * 1px,
+	md:		map-get($grid-col-width, md) * 1px,
+	sm:		map-get($grid-col-width, sm) * 1px,
+	xs:		100% //map-get($grid-col-width, xs) * 1px
+);
+
+$grid-col-2: (
+	null: 	((map-get($grid-col-width, null) * 2) + (map-get($grid-gutter-width, null) * 1) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 2) + (map-get($grid-gutter-width, xl) * 1) * 1px),
+	md:		((map-get($grid-col-width, md) * 2) + (map-get($grid-gutter-width, md) * 1) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 2) + (map-get($grid-gutter-width, sm) * 1) * 1px),
+	xs:		100%
+);
+
+$grid-col-3: (
+	null: 	((map-get($grid-col-width, null) * 3) + (map-get($grid-gutter-width, null) * 2) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 3) + (map-get($grid-gutter-width, xl) * 2) * 1px),
+	md:		((map-get($grid-col-width, md) * 3) + (map-get($grid-gutter-width, md) * 2) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 3) + (map-get($grid-gutter-width, sm) * 2) * 1px),
+	xs:		100%
+);
+
+$grid-col-4: (
+	null: 	((map-get($grid-col-width, null) * 4) + (map-get($grid-gutter-width, null) * 3) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 4) + (map-get($grid-gutter-width, xl) * 3) * 1px),
+	md:		((map-get($grid-col-width, md) * 4) + (map-get($grid-gutter-width, md) * 3) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 4) + (map-get($grid-gutter-width, sm) * 3) * 1px),
+	xs:		100%
+);
+
+$grid-col-5: (
+	null: 	((map-get($grid-col-width, null) * 5) + (map-get($grid-gutter-width, null) * 4) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 5) + (map-get($grid-gutter-width, xl) * 4) * 1px),
+	md:		((map-get($grid-col-width, md) * 5) + (map-get($grid-gutter-width, md) * 4) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 5) + (map-get($grid-gutter-width, sm) * 4) * 1px),
+	xs:		100%
+);
+
+$grid-col-6: (
+	null: 	((map-get($grid-col-width, null) * 6) + (map-get($grid-gutter-width, null) * 5) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 6) + (map-get($grid-gutter-width, xl) * 5) * 1px),
+	md:		((map-get($grid-col-width, md) * 6) + (map-get($grid-gutter-width, md) * 5) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 6) + (map-get($grid-gutter-width, sm) * 5) * 1px),
+	xs:		100%
+);
+
+$grid-col-7: (
+	null: 	((map-get($grid-col-width, null) * 7) + (map-get($grid-gutter-width, null) * 6) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 7) + (map-get($grid-gutter-width, xl) * 6) * 1px),
+	md:		((map-get($grid-col-width, md) * 7) + (map-get($grid-gutter-width, md) * 6) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 7) + (map-get($grid-gutter-width, sm) * 6) * 1px),
+	xs:		100%
+);
+
+$grid-col-8: (
+	null: 	((map-get($grid-col-width, null) * 8) + (map-get($grid-gutter-width, null) * 7) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 8) + (map-get($grid-gutter-width, xl) * 7) * 1px),
+	md:		((map-get($grid-col-width, md) * 8) + (map-get($grid-gutter-width, md) * 7) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 8) + (map-get($grid-gutter-width, sm) * 7) * 1px),
+	xs:		100%
+);
+
+$grid-col-9: (
+	null: 	((map-get($grid-col-width, null) * 9) + (map-get($grid-gutter-width, null) * 8) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 9) + (map-get($grid-gutter-width, xl) * 8) * 1px),
+	md:		((map-get($grid-col-width, md) * 9) + (map-get($grid-gutter-width, md) * 8) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 9) + (map-get($grid-gutter-width, sm) * 8) * 1px),
+	xs:		100%
+);
+
+$grid-col-10: (
+	null: 	((map-get($grid-col-width, null) * 10) + (map-get($grid-gutter-width, null) * 9) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 10) + (map-get($grid-gutter-width, xl) * 9) * 1px),
+	md:		((map-get($grid-col-width, md) * 10) + (map-get($grid-gutter-width, md) * 9) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 10) + (map-get($grid-gutter-width, sm) * 9) * 1px),
+	xs:		100%
+);
+
+$grid-col-11: (
+	null: 	((map-get($grid-col-width, null) * 11) + (map-get($grid-gutter-width, null) * 10) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 11) + (map-get($grid-gutter-width, xl) * 10) * 1px),
+	md:		((map-get($grid-col-width, md) * 11) + (map-get($grid-gutter-width, md) * 10) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 11) + (map-get($grid-gutter-width, sm) * 10) * 1px),
+	xs:		100%
+);
+
+$grid-col-12: (
+	null: 	((map-get($grid-col-width, null) * 12) + (map-get($grid-gutter-width, null) * 11) * 1px),
+	xl: 	((map-get($grid-col-width, xl) * 12) + (map-get($grid-gutter-width, xl) * 11) * 1px),
+	md:		((map-get($grid-col-width, md) * 12) + (map-get($grid-gutter-width, md) * 11) * 1px),
+	sm:		((map-get($grid-col-width, sm) * 12) + (map-get($grid-gutter-width, sm) * 11) * 1px),
+	xs:		100%
+);
+

@@ -1,0 +1,125 @@
+@import 'vars-spacing';
+
+/** VARIABLES: TYPOGRAPHY  **/
+$type-display-family: 'Poppins', sans-serif;
+$type-display-weight: 700;
+
+$type-bold-family: 'Poppins', sans-serif;
+$type-bold-weight: 600;
+
+$type-body-family: 'Poppins', sans-serif;
+$type-body-weight: 400;
+
+$type-lineheight-ratio: 1.618; /* Golden Ratio */
+
+/* D1/H1 MAPPING */
+$d1-properties: (
+	null:	(72px, 72px, -1px, map-get($spacing-sm-properties, null)), //font-size, line-height, letter-spacing, margin-bottom
+	xl:		(96px, 96px, -1px, map-get($spacing-xs-properties, xl)),
+	md:		(72px, 72px, -1px, map-get($spacing-sm-properties, md)),
+	sm:		(54px, 54px, -0.5px, map-get($spacing-sm-properties, sm)),
+	xs:		(40px, 44px, -0.5px, map-get($spacing-sm-properties, xs))
+);
+
+/* D2/H2 MAPPING */
+$d2-properties: (
+	null:	(42px, 48px, -0.5px, map-get($spacing-sm-properties, null)),
+	xl:		(42px, 48px, -1px, map-get($spacing-sm-properties, xl)),
+	md:		(42px, 48px, -0.5px, map-get($spacing-sm-properties, md)),
+	sm:		(30px, 38px, -0.5px, map-get($spacing-sm-properties, sm)),
+	xs:		(30px, 38px, -0.5px, map-get($spacing-sm-properties, xs))
+);
+
+/* D3/H3 MAPPING */
+$d3-properties: (
+	null:	(36px, 42px, -0.5px, map-get($spacing-sm-properties, null)),
+	xl:		(48px, 52px, -0.5px, map-get($spacing-sm-properties, xl)),
+	md:		(36px, 42px, -0.5px, map-get($spacing-sm-properties, md)),
+	sm:		(28px, 34px, 0px, map-get($spacing-sm-properties, sm)),
+	xs:		(28px, 34px, 0px, map-get($spacing-sm-properties, xs))
+);
+
+/* D4/H4 MAPPING */
+$d4-properties: (
+	null:	(30px, 36px, -0.5px, map-get($spacing-sm-properties, null)),
+	xl:		(40px, 44px, -0.5px, map-get($spacing-sm-properties, xl)),
+	md:		(30px, 36px, -0.5px, map-get($spacing-sm-properties, md)),
+	sm:		(24px, 32px, 0px, map-get($spacing-sm-properties, sm)),
+	xs:		(24px, 32px, 0px, map-get($spacing-sm-properties, xs))
+);
+
+/* D5/H5 MAPPING */
+$d5-properties: (
+	null:	(20px, 26px, 0px, map-get($spacing-sm-properties, null)),
+	xl:		(26px, 30px, 0px, map-get($spacing-sm-properties, xl)),
+	md:		(20px, 26px, 0px, map-get($spacing-sm-properties, md)),
+	sm:		(16px, 24px, 0px, map-get($spacing-sm-properties, sm)),
+	xs:		(18px, 24px, 0px, map-get($spacing-sm-properties, xs))
+);
+
+/* D6/H6 MAPPING */
+$d6-properties: (
+	null:	(14px, 22px, 0px, map-get($spacing-sm-properties, null)),
+	xl:		(18px, 22px, 0px, map-get($spacing-sm-properties, xl)),
+	md:		(14px, 22px, 0px, map-get($spacing-sm-properties, md)),
+	sm:		(14px, 22px, 0px, map-get($spacing-sm-properties, sm)),
+	xs:		(14px, 22px, 0px, map-get($spacing-sm-properties, xs))
+);
+
+/* B1 MAPPING */
+$b1-properties: (
+	null:	(22px, 22px * $type-lineheight-ratio, map-get($spacing-sm-properties, null)),
+	xl:		(22px, 22px * $type-lineheight-ratio, map-get($spacing-sm-properties, xl)),
+	md:		(18px, 18px * $type-lineheight-ratio, map-get($spacing-sm-properties, md)),
+	sm:		(18px, 18px * $type-lineheight-ratio, map-get($spacing-sm-properties, sm)),
+	xs:		(18px, 18px * $type-lineheight-ratio, map-get($spacing-sm-properties, xs))
+);
+
+$b2-properties: (
+	null:	(18px, 18px * $type-lineheight-ratio, map-get($spacing-sm-properties, null)),
+	xl:		(18px, 18px * $type-lineheight-ratio, map-get($spacing-sm-properties, xl)),
+	md:		(14px, 14px * $type-lineheight-ratio, map-get($spacing-sm-properties, md)),
+	sm:		(16px, 16px * $type-lineheight-ratio, map-get($spacing-sm-properties, sm)),
+	xs:		(16px, 16px * $type-lineheight-ratio, map-get($spacing-sm-properties, xs))
+);
+
+$b3-properties: (
+	null:	(14px, 14px * $type-lineheight-ratio, map-get($spacing-sm-properties, null)),
+	xl:		(14px, 14px * $type-lineheight-ratio, map-get($spacing-sm-properties, xl)),
+	md:		(12px, 12px * $type-lineheight-ratio, map-get($spacing-sm-properties, md)),
+	sm:		(14px, 14px * $type-lineheight-ratio, map-get($spacing-sm-properties, sm)),
+	xs:		(14px, 14px * $type-lineheight-ratio, map-get($spacing-sm-properties, xs))
+);
+
+$b4-properties: (
+	null:	(12px, 12px * $type-lineheight-ratio, map-get($spacing-sm-properties, null)),
+	xl:		(12px, 12px * $type-lineheight-ratio, map-get($spacing-sm-properties, xl)),
+	md:		(12px, 12px * $type-lineheight-ratio, map-get($spacing-sm-properties, md)),
+	sm:		(12px, 12px * $type-lineheight-ratio, map-get($spacing-sm-properties, sm)),
+	xs:		(12px, 12px * $type-lineheight-ratio, map-get($spacing-sm-properties, xs))
+);
+
+//Aliases
+$d1: $d1-properties;
+$d2: $d2-properties;
+$d3: $d3-properties;
+$d4: $d4-properties;
+$d5: $d5-properties;
+$d6: $d6-properties;
+$b1: $b1-properties;
+$b2: $b2-properties;
+$b3: $b3-properties;
+$b4: $b4-properties;
+
+/* UTILITY FUNCTIONS TO RETRIEVE */
+@function font-size($thisTypeMap, $thisBreakpoint){	
+	@return nth(map-get($thisTypeMap, $thisBreakpoint), 1);
+}
+
+@function line-height($thisTypeMap, $thisBreakpoint){
+	@return nth(map-get($thisTypeMap, $thisBreakpoint), 2);
+}
+
+@function letter-spacing($thisTypeMap, $thisBreakpoint){
+	@return nth(map-get($thisTypeMap, $thisBreakpoint), 3);
+}

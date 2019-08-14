@@ -1,0 +1,29 @@
+/** VARIABLES: SCSS
+
+Contains variables used as foundational elements for design.
+Color, Typography, Grid, Spacing, Shared UI Properties, Animation.
+Responsive breakdowns.
+
+**/
+
+
+/** UNIVERAL FACTOR **/
+$factor: 8;
+
+$nav-height: (
+	null:	96px,
+	xl: 	96px,
+	md: 	64px,
+	sm: 	64px,
+	xs: 	64px
+);
+
+$nav-height-scrolled: 64px;
+
+@import 'vars-breakpoints';
+@import 'vars-colors';
+@import 'vars-spacing';
+@import 'vars-typography';
+@import 'vars-grid';
+@import 'vars-animations';
+@import 'vars-ui';
