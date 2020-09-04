@@ -41,7 +41,7 @@
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.7.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.1",
     "react-hot-loader": "^4.3.3",
     "redux-logger": "^3.0.6",
     "sass-loader": "^7.1.0",
